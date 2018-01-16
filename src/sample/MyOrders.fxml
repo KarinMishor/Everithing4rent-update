@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="197.0" prefWidth="293.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MyOrdersControllers">
+   <children>
+      <Label layoutX="80.0" layoutY="42.0" text="ההזמנות שלי">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="OrdersAsOwner_btn" layoutX="71.0" layoutY="83.0" mnemonicParsing="false" onAction="#showOrdersAsOwner" prefHeight="32.0" prefWidth="157.0" text="הזמנות לחבילות שבבעלותי" />
+      <Button fx:id="OrdersAsBuyer_btn" layoutX="72.0" layoutY="131.0" mnemonicParsing="false" onAction="#showOrdersAsBuyer" prefHeight="32.0" prefWidth="157.0" text="הזמנות שהזמנתי" />
+   </children>
+</AnchorPane>

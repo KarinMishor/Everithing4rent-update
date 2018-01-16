@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="263.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MyProducts">
+   <children>
+      <Label layoutX="85.0" layoutY="21.0" text="פריטים שלי" textFill="#cd3131">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="106.0" layoutY="66.0" mnemonicParsing="false" onAction="#showProducts" text="הצג פריטים" />
+      <Button layoutX="92.0" layoutY="100.0" mnemonicParsing="false" onAction="#editRealEstate" text="עריכת פריט נדלן" />
+      <Button layoutX="91.0" layoutY="134.0" mnemonicParsing="false" onAction="#editvehicle" text="עריכת פריט רכב" />
+      <Button layoutX="86.0" layoutY="167.0" mnemonicParsing="false" onAction="#editPets" text="עריכת פריט בע&quot;ח" />
+      <Button layoutX="81.0" layoutY="202.0" mnemonicParsing="false" onAction="#editSecondHand" text="עריכת פריט יד שניה" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="385.0" prefWidth="450.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
+   <children>
+      <Label layoutX="150.0" layoutY="85.0" text="אנא הזן כתובת אימייל וסיסמא" />
+
+       <TextField fx:id="emailfld" layoutX="152.0" layoutY="115.0" promptText="Email" />
+       <PasswordField fx:id="passfld" layoutX="152.0" layoutY="157.0" promptText="Password" />
+       <Button fx:id="loginbtm" layoutX="195.0" layoutY="194.0" mnemonicParsing="false" onAction="#Login" text="התחבר" />
+      <Button fx:id="register" layoutX="184.0" layoutY="298.0" mnemonicParsing="false" onAction="#registration" text="הרשמה">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="144.0" layoutY="236.0" prefHeight="48.0" prefWidth="154.0" text="אם אינך בעל פרופיל באתר, אנא הרשם:" textAlignment="RIGHT" wrapText="true" />
+      <Label layoutX="174.0" layoutY="28.0" text="התחברות" textFill="#c62828">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

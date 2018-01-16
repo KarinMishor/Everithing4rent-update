@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="351.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SearchRealEstateController">
+    <children>
+        <TextField fx:id="minPrice_txtfld" layoutX="198.0" layoutY="137.0" prefHeight="25.0" prefWidth="149.0" />
+        <Text layoutX="456.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+        <Text layoutX="345.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="כמות אנשים מינימלית שיכיל המתחם" textAlignment="CENTER" wrappingWidth="127.404296875" />
+
+        <Button fx:id="search_btn" layoutX="223.0" layoutY="320.0" mnemonicParsing="false" onAction="#doSearch" prefHeight="52.0" prefWidth="81.0" text="חיפוש" />
+
+        <Text layoutX="385.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="מחיר מינימאלי" textAlignment="RIGHT" wrappingWidth="79.00000065565109" />
+        <Text layoutX="497.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+        <Label layoutX="173.0" layoutY="30.0" text="חיפוש פריט נדל&quot;ן">
+            <font>
+                <Font name="System Bold" size="26.0" />
+            </font>
+        </Label>
+        <TextField fx:id="numOfPeople_txtfld" layoutX="198.0" layoutY="103.0" prefHeight="25.0" prefWidth="149.0" />
+        <TextField fx:id="maxPricr_txtfld" layoutX="198.0" layoutY="168.0" prefHeight="25.0" prefWidth="149.0" />
+        <Text layoutX="373.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="מחיר מקסימאלי" textAlignment="RIGHT" wrappingWidth="89.66662663221359" />
+        <TextField fx:id="desc_txtfld" layoutX="198.0" layoutY="199.0" />
+        <Label layoutX="396.0" layoutY="203.0" text="טקסט חופשי" textAlignment="RIGHT" />
+      <DatePicker fx:id="start_date" layoutX="200.0" layoutY="234.0" prefHeight="25.0" prefWidth="149.0" />
+      <DatePicker fx:id="end_date" layoutX="200.0" layoutY="267.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="389.0" layoutY="238.0" text="תאריך התחלה" textAlignment="RIGHT" />
+      <Label layoutX="405.0" layoutY="271.0" text="תאריך סיום" textAlignment="RIGHT" />
+    </children>
+</AnchorPane>

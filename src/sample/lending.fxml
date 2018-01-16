@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="395.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.lendingController">
+   <children>
+      <Label layoutX="130.0" layoutY="39.0" text="הזמנה חדשה">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Text layoutX="216.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="הזן מזהה חבילה להשאלה" />
+       <TextField fx:id="packet_txtfld" layoutX="37.0" layoutY="99.0" prefHeight="25.0" prefWidth="152.0" />
+      <Text layoutX="217.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="הזן מזהה חבילה להחלפה" />
+      <TextField fx:id="packetToTrade_txtfld" disable="true" layoutX="38.0" layoutY="175.0" prefHeight="25.0" prefWidth="152.0" />
+      <CheckBox fx:id="isTrading" layoutX="38.0" layoutY="139.0" mnemonicParsing="false" onAction="#checkTrading" text="האם לבצע השאלה הדדית?" />
+      <Button fx:id="doLending_btn" layoutX="147.0" layoutY="291.0" mnemonicParsing="false" onAction="#doLending" text="ביצוע הזמנה" />
+      <Text layoutX="217.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="תוספת תשלום עצמית" textAlignment="RIGHT" wrappingWidth="130.75781235471368" />
+      <TextField fx:id="addition1_txtfld" disable="true" layoutX="38.0" layoutY="209.0" prefHeight="25.0" prefWidth="152.0" />
+      <Text layoutX="217.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="תוספת תשלום נדרשת מבעל החבילה" textAlignment="RIGHT" wrappingWidth="131.9765603095293" />
+      <TextField fx:id="addition2_txtfld" disable="true" layoutX="38.0" layoutY="243.0" prefHeight="25.0" prefWidth="152.0" />
+   </children>
+</AnchorPane>
